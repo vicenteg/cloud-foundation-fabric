@@ -105,6 +105,7 @@ variable "fast_features" {
   description = "Selective control for top-level FAST features."
   type = object({
     data_platform   = optional(bool, false)
+    gcve            = optional(bool, false)
     gke             = optional(bool, false)
     project_factory = optional(bool, false)
     sandbox         = optional(bool, false)
@@ -112,13 +113,6 @@ variable "fast_features" {
   })
   default  = {}
   nullable = false
-}
-
-variable "group_iam" {
-  description = "Organization-level authoritative IAM binding for groups, in {GROUP_EMAIL => [ROLES]} format. Group emails need to be static. Can be used in combination with the `iam` variable."
-  type        = map(list(string))
-  default     = {}
-  nullable    = false
 }
 
 variable "groups" {

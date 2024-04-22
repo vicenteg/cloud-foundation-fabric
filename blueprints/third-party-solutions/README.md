@@ -10,6 +10,12 @@ The blueprints in this folder show how to automate installation of specific thir
 
 <br clear="left">
 
+### Gitlab
+
+<a href="./gitlab/" title="Gitlab"><img src="./gitlab/diagram.png" align="left" width="320px"></a> <p style="margin-left: 340px">This blueprint shows how to deploy a Gitlab instance in GCP. The architecture is based on the reference described in the [official documentation](https://docs.gitlab.com/ee/administration/reference_architectures/1k_users.html) with managed services such as Cloud SQL, Memorystore and Cloud Storage.</p>
+
+<br clear="left">
+
 ### Gitlab Runner
 
 <a href="./gitlab-runner/" title="Gitlab Runner"><img src="./gitlab-runner/images/docker-autoscaler.png" align="left" width="320px"></a> <p style="margin-left: 340px">These [example](./gitlab-runner/) show how to deploy a Gitlab runner in GCP.</p>
